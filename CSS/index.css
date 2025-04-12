@@ -1,0 +1,137 @@
+/* 全局样式重置 */
+body, ul, li, oi, dl, dd, dt, h1, h2, h3, h4, h5, h6, p, a, img {
+    margin: 0;               /* 去除外边距 */
+    padding: 0;              /* 去除内边距 */
+    border: 0;               /* 去除边框 */
+    font-size: none;         /* 取消字体大小设置 */
+    list-style-type: none;
+}
+
+/* body样式设置 */
+body {
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif; /* 设置字体族 */
+    font-size: 14px;         /* 设置基础字体大小 */
+}
+
+/* a标签样式设置 */
+a {
+    text-decoration: none;    /* 取消文本装饰，如下划线 */
+}
+
+/* input和textarea样式设置 */
+input, textarea {
+    outline: none;           /* 移除轮廓线 */
+}
+
+/* @font-face自定义字体设置 */
+@font-face {
+    font-family: 'freshskin'; /* 定义字体族名称为freshskin */
+    src: url('../fonts/iconfont.ttf'); /* 指定字体文件路径 */
+}
+
+/*--head begin--*/
+/* header样式设置 */
+header {
+    /*position: fixed;    /* 固定定位（不随页面滚动） */
+     top: 0;             /* 贴顶 */
+     width: 100%;        /* 宽度100% */
+     background: #0a2536; 半透明黑色背景 */
+     padding: 20px;      /* 内边距 */
+     z-index: 100;       /* 层级高于视频 */
+}
+header .nav-container {
+     display: flex;                  /* 启用Flex布局 */
+     justify-content: space-between;  /* 左右两侧分散对齐 */
+     max-width: 1800px;              /* 最大宽度（可选） */
+     margin: 0 auto;                 /* 水平居中 */
+}
+/* === 横向导航列表 === */
+.nav-list {
+    display: flex;       /* 横向排列子项 */
+    list-style: none;    /* 去掉<li>前的圆点 */
+    gap: 30px;           /* 菜单项之间的间距 */
+    margin: 15px auto;           /* 清除默认外边距 */
+}
+header .con .nav-list li {
+    height: 46px;              /* 设置高度为46px */
+    line-height: 46px;        /* 设置行高为46px */
+    margin-right: 50px;        /* 设置右边距为50px */
+    color: #fff;               /* 设置字体颜色为白色 */
+    cursor: pointer;          /* 设置鼠标指针样式为手形 */
+}
+header .nav-container .nav-list li a {
+    color: #fff;
+}
+
+header .nav-container .nav-list li a:hover{
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+/* nav样式设置 */
+nav {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+nav .nav_in {
+    width: 1200px;             /* 设置容器宽度为1200px */
+    margin: 0 auto;            /* 容器居中显示 */
+}
+nav ul {
+    float: left;                /* 浮动到左侧 */
+}
+nav ul li {
+    float: left;                /* 浮动到左侧 */
+    margin-right: 50px;         /* 设置右边距为50px */
+    font-size: 18px;            /* 设置字体大小为18px */
+    height: 55px;                /* 设置高度为55px */
+    line-height: 55px;           /* 设置行高为55px */
+}
+nav ul li:first-child a {
+    display: inline-block;      /* 设置为内联块元素 */
+    height: 55px;                /* 设置高度为55px */
+    width: 118px;                /* 设置宽度为118px */
+    background: url("../images/logo.png") no-repeat center left; /* 设置背景图像及位置 */
+}
+nav .nav_in ol {
+    float: right;               /* 浮动到右侧 */
+    width: 300px;               /* 设置宽度为300px */
+    height: 55px;               /* 设置高度为55px */
+    font-family: "freshskin";   /* 设置字体族为freshskin */
+}
+
+nav .nav_in ol li {
+    float: left;                /* 浮动到左侧，使列表项水平排列 */
+    width: 32px;                /* 设置每个列表项的宽度为32px */
+    height: 32px;               /* 设置每个列表项的高度为32px */
+    line-height: 32px;          /* 设置行高为32px，使文本垂直居中 */
+    text-align: center;         /* 文本水平居中 */
+    color: #333;                /* 设置文本颜色为深灰色 */
+    box-shadow: 0 0 0 10px #333 inset; /* 添加内阴影，模拟边框效果 */
+    transition: box-shadow 0.5s ease 0s; /* 添加过渡效果，使阴影变化更平滑 */
+    border-radius: 16px;        /* 设置圆角半径为16px，使列表项呈现圆形 */
+    margin: 10px 0 0 30px;      /* 设置外边距，上边距10px，左边距30px */
+    cursor: pointer;            /* 设置鼠标悬停时为手型指针，表示可点击 */
+}
+
+nav .nav_in ol li:hover {
+    box-shadow: 0 0 0 16px #fff inset;
+    color: #333;
+}
+/*nav end*/
+
+/*--banner begin--*/
+.banner {
+    width: 100%;
+	height: 720px;
+	position: relative;
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+}
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}

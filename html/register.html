@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册切换页面</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <!-- 欢迎区域 -->
+            <div class="welcome-section">
+                <div class="welcome-content">
+                    <h2>欢迎回来！</h2>
+                    <p>立即登录您的账户，体验我们的专业服务。</p>
+                    <button class="toggle-btn" onclick="toggleForm()">注册账户</button>
+                </div>
+            </div>
+            <!-- 登录表单区域 -->
+            <div class="form-section">
+                <form class="form-content">
+                    <h2>用户登录</h2>
+                    <div class="input-group">
+                        <input type="text" placeholder="用户名/邮箱" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="密码" required>
+                    </div>
+                    <button type="submit" class="submit-btn" onclick="toggleForm()">立即登录</button>
+                    <!-- 忘记密码链接 -->
+                    <div class="form-links">
+                        <div class="register-link">
+                            <a href="#">记住我</a>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#">忘记密码？</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleForm() 
+    {
+        const container = document.querySelector('.container');
+        container.classList.toggle('active');
+    }
+    </script>
+</script>
+</html>

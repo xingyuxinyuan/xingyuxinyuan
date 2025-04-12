@@ -1,0 +1,170 @@
+/* 通用样式 */
+* {
+    margin: 0; /* 去除默认的外边距 */
+    padding: 0; /* 去除默认的内边距 */
+    box-sizing: border-box; /* 确保元素的内边距和边框不会影响总宽度 */
+    font-family: 'Arial', sans-serif; /* 设置默认字体 */
+}
+
+/* 页面背景 */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    min-height: 100vh; /* 设置页面高度为视口高度 */
+    background-image: url("../asset/yingmiss.jpg"); /* 背景图片 */
+    background-size: cover; /* 背景图片覆盖整个页面 */
+    background-position: center; /* 背景图片居中 */
+}
+
+/* 容器样式 */
+.container {
+    position: relative;
+    width: 900px; /* 容器宽度 */
+    height: 550px; /* 容器高度 */
+    background: rgba(255, 255, 255, 0.9); /* 容器背景颜色（半透明白色） */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1); /* 容器阴影效果 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    border-radius: 20px; /* 圆角效果 */
+}
+ 
+/* 表单区域布局 */
+.form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* 使用Flex布局 */
+}
+
+/* 欢迎区域样式 */
+.welcome-section {
+    position: relative;
+    width: 50%; /* 欢迎区域宽度 */
+    height: 100%;
+    background: rgba(24, 119, 242, 0.6); /* 欢迎区域背景颜色（半透明蓝色） */
+    color: white; /* 文字颜色 */
+    padding: 40px; /* 内边距 */
+    transition: 0.5s; /* 切换动画时长 */
+}
+
+/* 登录表单区域样式 */
+.form-section {
+    width: 50%; /* 表单区域宽度 */
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* 表单区域背景颜色（半透明白色） */
+    padding: 40px; /* 内边距 */
+    transition: 0.5s; /* 切换动画时长 */
+}
+
+/* 欢迎内容布局 */
+.welcome-content {
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: center; /* 垂直居中 */
+    height: 100%;
+}
+.welcome-content h2 {
+    text-align: start;
+    font-size: 50px;
+}
+/* 表单内容布局 */
+.form-content {
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: center; /* 垂直居中 */
+    height: 100%;
+}
+
+/* 标题样式 */
+h2 {
+    font-size: 2.5em; /* 标题字体大小 */
+    margin-bottom: 20px; /* 标题下方间距 */
+}
+
+/* 段落样式 */
+p {
+    line-height: 1.6; /* 行高 */
+    margin-bottom: 30px; /* 段落下方间距 */
+}
+
+/* 切换按钮样式 */
+.toggle-btn {
+    padding: 12px 45px; /* 按钮内边距 */
+    background: transparent; /* 按钮背景透明 */
+    border: 2px solid #fff; /* 按钮边框 */
+    color: white; /* 按钮文字颜色 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    border-radius: 25px; /* 圆角按钮 */
+    font-weight: bold; /* 文字加粗 */
+    transition: 0.3s; /* 按钮悬停动画时长 */
+}
+
+/* 按钮悬停效果 */
+.toggle-btn:hover {
+    background: #fff; /* 悬停时背景颜色 */
+    color: #1877f2; /* 悬停时文字颜色 */
+}
+
+
+/* 输入框组样式 */
+.input-group {
+    margin-bottom: 20px; /* 输入框下方间距 */
+}
+
+/* 输入框样式 */
+input {
+    width: 100%; /* 输入框宽度 */
+    padding: 12px; /* 输入框内边距 */
+    border: 1px solid #ddd; /* 输入框边框 */
+    border-radius: 5px; /* 输入框圆角 */
+    font-size: 16px; /* 输入框文字大小 */
+}
+
+/* 提交按钮样式 */
+.submit-btn {
+    background: #1877f2; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    padding: 12px; /* 按钮内边距 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 按钮圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    font-size: 16px; /* 按钮文字大小 */
+    font-weight: bold; /* 文字加粗 */
+}
+.form-links {
+    padding: 10px;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 两端对齐 */
+    margin-bottom: 20px; /* 与下方按钮的间距 */
+}
+.forgot-password a {
+    color: #1877f2; /* 链接颜色 */
+    text-decoration: none; /* 去除下划线 */
+    font-size: 14px; /* 字体大小 */
+    transition: color 0.3s ease; /* 颜色过渡效果 */
+}
+.register-link a {
+    color: #1877f2; /* 链接颜色 */
+    text-decoration: none; /* 去除下划线 */
+    font-size: 14px; /* 字体大小 */
+    transition: color 0.3s ease; /* 颜色过渡效果 */
+}
+.forgot-password a:hover {
+    color: #1155cc; /* 鼠标悬停时的颜色 */
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+.register-link a:hover {
+    color: #1155cc; /* 鼠标悬停时的颜色 */
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+/* 切换动画 */
+.container.active .welcome-section {
+    transform: translateX(100%); /* 向右移动100%宽度 */
+}
+
+.container.active .form-section {
+    transform: translateX(-100%); /* 向左移动100%宽度 */
+}
